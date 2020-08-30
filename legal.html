@@ -74,38 +74,378 @@
                           <div class="dropdown-divider navbar-brand"></div>
                           <div class="dropdown-divider navbar-brand" class="text-center py-5"></div>
                                <main class="text-center py-5">
-                      <h3 class="display-4">Cannabis by State</h1>
+                      <h3 class="display-4">Cannabis Laws by State</h1>
                           <hr class="md-">
 
         <div id="figure" style="style3.css">
              <div class="dropdown-divider navbar-brand" class="text-center py-5">
         </div>
-        <main class="text-center py-5">
-              <h1 id="Figure 1">Cannabis Laws by State Data</h2>
-                  <a href="chartc.html"><img id="Figure 1" class="navbar-brand" 
-                  class="col-md-12" class="container"
-                  src="https://github.com/C-Miranda/ETL-Project/blob/master/Images/states_with_legal_cannabis.png?raw=true" 
-                  alt="Figure 1: Marijuana" width="600" height="500">
-                  </a>
-               </h1>
-      </div>
-
-    <div class="dropdown-divider navbar-brand" class="text-center py-5"></div>
+    
+    <div class="navbar-brand" class="text-center py-5"></div>
     <main class="text-center py-5">
-
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                   <body>
-                     <p>With the combined data sources we will be able to:</p> 
-                   </body>  
-                     <p>1. View each state's laws regarding recreational use</p>
-                     <p>2. View each state's legal classification</p>
-                     <p>3. Compare drug death rate between the states that legalized marijuana vs. those that haven’t</p>
-                   
-               </div>
-          </div>
-      </div>
+      <table border="1" class="dataframe" align="center">
+        <thead>
+          <tr style="text-align: center;">
+            <th></th>
+            <th>state</th>
+            <th>medical</th>
+            <th>recreational</th>
+            <th>illegal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>Alabama</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>Alaska</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Arizona</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Arkansas</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>California</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>Colorado</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>Connecticut</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>Delaware</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>Florida</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>Georgia</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>Hawaii</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td>Idaho</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td>Illinois</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td>Indiana</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>Iowa</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td>Kansas</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>Kentucky</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>17</th>
+            <td>Louisiana</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>18</th>
+            <td>Maine</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>19</th>
+            <td>Maryland</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>20</th>
+            <td>Massachusetts</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>21</th>
+            <td>Michigan</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>22</th>
+            <td>Minnesota</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>23</th>
+            <td>Mississippi</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>24</th>
+            <td>Missouri</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>25</th>
+            <td>Montana</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>26</th>
+            <td>Nebraska</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>27</th>
+            <td>Nevada</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>28</th>
+            <td>New Hampshire</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>29</th>
+            <td>New Jersey</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>30</th>
+            <td>New Mexico</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>31</th>
+            <td>New York</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>32</th>
+            <td>north Carolina</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>33</th>
+            <td>north Dakota</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>34</th>
+            <td>Ohio</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>35</th>
+            <td>Oklahoma</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>36</th>
+            <td>Oregon</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>37</th>
+            <td>Pennsylvania</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>38</th>
+            <td>Rhode Island</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>39</th>
+            <td>South Carolina</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>40</th>
+            <td>South Dakota</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>41</th>
+            <td>Tennessee</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>42</th>
+            <td>Texas</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>43</th>
+            <td>Utah</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>44</th>
+            <td>Vermont</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>45</th>
+            <td>Virginia</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>46</th>
+            <td>Washington</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th>47</th>
+            <td>West Virginia</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>48</th>
+            <td>Wisconsin</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+          <tr>
+            <th>49</th>
+            <td>Wyoming</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+          </tr>
+        </tbody>
+      </table>      
     </main>
   </div>
 
