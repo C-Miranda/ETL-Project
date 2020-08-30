@@ -1,9 +1,9 @@
-﻿State,Year_2018,Share_2018_Rev,Year_2019,Share_2019_Rev,Rev_Growth_2018_to_2019,Share_Nationwide_Rev_Growth
-California,$395.40 ,28%,$629.20 ,33%,$233.80 ,49%
-Massachusetts,$3.30 ,0%,$89.00 ,5%,$85.70 ,18%
-Colorado,$299.50 ,21%,$346.20 ,18%,$46.70 ,10%
-Washington,$470.10 ,33%,$512.50 ,27%,$42.50 ,9%
-Nevada,$134.40 ,9%,$164.80 ,9%,$30.40 ,6%
-Oregon,$108.80 ,8%,$133.90 ,7%,$25.10 ,5%
-Alaska,$20.60 ,1%,$28.40 ,1%,$7.80 ,2%
-Michigan,$—,0%,$1.20 ,0%,$1.20 ,0%
+﻿state,2018_revenue,2018_revenue_share,revenue_2019,2019_revenue_share,rev_growth_18_19,usa_growth_share
+California,395.4,0.28,629.2,0.33,233.8,0.49
+Massachusetts,3.3,0,89,0.05,85.7,0.18
+Colorado,299.5,0.21,346.2,0.18,46.7,0.1
+Washington,470.1,0.33,512.5,0.27,42.5,0.09
+Nevada,134.4,0.09,164.8,0.09,30.4,0.06
+Oregon,108.8,0.08,133.9,0.07,25.1,0.05
+Alaska,20.6,0.01,28.4,0.01,7.8,0.02
+Michigan,0,0,1.2,0,1.2,0
