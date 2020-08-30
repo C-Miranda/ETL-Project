@@ -9,7 +9,7 @@
   }
   
   .top-nav-collapse {
-    background-color: rgb(27, 248, 27);
+    background-color: darkmagenta;
   }
   
   .intro-2 {
@@ -31,12 +31,12 @@
     }
   
     body {
-      color: darkseagreen;
+      color: white;
     }
     h1 {
-      color: #00FF00;
+      color: white;
     }
     p {
-      color: darkolivegreen
+      color: white
     }
   
