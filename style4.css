@@ -1,0 +1,42 @@
+
+.view {
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR16licI2pbGGOv8Iy8SkKHjoX2_VzrV9GLVQ&usqp=CAU")no-repeat center center;
+    background-size: cover;
+  }
+  
+  .navbar {
+    background-color: transparent;
+  }
+  
+  .top-nav-collapse {
+    background-color: rgb(27, 248, 27);
+  }
+  
+  .intro-2 {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR16licI2pbGGOv8Iy8SkKHjoX2_VzrV9GLVQ&usqp=CAU")no-repeat center center;
+    background-size: cover;
+  }
+  
+  .navbar {
+    background-color: transparent;
+  }
+  
+  .top-nav-collapse {
+    background-color: rgb(162, 247, 16);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: rgb(100, 241, 100);
+    }
+  
+    body {
+      color: darkseagreen;
+    }
+    h1 {
+      color: #00FF00;
+    }
+    p {
+      color: darkolivegreen
+    }
+  
