@@ -1,85 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="full-height">
 
 <head>
   <meta charset="UTF-8">
   <title>ETL Project</title>
+  
+  <link rel="stylesheet" href="style3.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
 </head>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-  <a class="navbar-brand" class="row justify-content-end" 
-  <div class="col-md-2" 
-  <div class="col-md-3"
-  href="index.html"><strong>HOME PAGE</strong></a></div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-  </button>
-
-    <div class="collapse navbar-collapse" class="row justify-content-end" id="navbarSupportedContent">
-      <div class="col-md-9"></div>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
-          aria-haspopup="true" aria-expanded="false">DATA</a>
-
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="death.html">
-                Drug Related Death</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="rec.html">
-                Recreational Use by State</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="legal.html">
-                Cannabis Laws by State</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="collective.html">
-                Collective Table of Data</a>
-          </div>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
-            aria-haspopup="true" aria-expanded="false">CHARTS</a>
+<header>
   
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="charta.html">
-                  Drug Related Death</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="chartb.html">
-                  Recreational Use by State</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="chartc.html">
-                  Cannabis Laws by State</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="charts.html">
-                  Collective Data</a>
-            </div>
-        <li class="nav-item active">
-          <a class="nav-link" href="report.html">
-            Analysis Report <span class="sr-only">(current)</span></a>
-        </li>
-    </nav>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" class="row justify-content-end" 
+        <div class="col-md-2" 
+        <div class="col-md-3"
+        href="index.html"><strong>HOME PAGE</strong></a></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Cannabis Laws By State CHART</h1>
-      <div class="dropdown-divider"></div>
-      <hr class="md-">
+        <div class="collapse navbar-collapse" class="row justify-content-end" id="navbarSupportedContent">
+          <div class="col-md-9"></div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+              aria-haspopup="true" aria-expanded="false">DATA</a>
+    
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="death.html">
+                    Drug Related Death</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="rec.html">
+                    Recreational Use by State</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="legal.html">
+                    Cannabis Laws by State</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="collective.html">
+                    Collective Table of Data</a>
+              </div>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+                aria-haspopup="true" aria-expanded="false">CHARTS</a>
+      
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="charta.html">
+                      Drug Related Death</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chartb.html">
+                      Recreational Use by State</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chartc.html">
+                      Cannabis Laws by State</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="charts.html">
+                      Collective Data</a>
+                </div>
+            <li class="nav-item active">
+              <a class="nav-link" href="report.html">
+                Analysis Report <span class="sr-only">(current)</span></a>
+            </li>
+        </nav>
+</header>
 
-      <section id="figure">
-        <h2 id="Figure 1">Each State's Cannabis Laws in the United States of America</h2>
-        <a href="chartc.html">
-        <img id="Figure 1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQdMsxh4v0dVde3-AKJXPxLfMT2TxTRLpAfhQ&usqp=CAU" 
-        alt="Figure 1: Marijuana" width="600" height="500">
-        </a>
-      </section>
+  <div class="view intro-2" style="style3.css">
+       <div class="full-bg-img">
+            <div class="mask rgba-purple-light flex-center">
+                 <div class="container text-center white-text wow fadeInUp">
+                      <h2 class="display-11"> </h2>
+                          <div class="dropdown-divider navbar-brand"></div>
+                          <div class="dropdown-divider navbar-brand" class="text-center py-5"></div>
+                               <main class="text-center py-5">
+                      <h3 class="display-4">Cannabis by State</h1>
+                          <hr class="md-">
 
-    <div class="dropdown-divider"></div>
+        <div id="figure" style="style3.css">
+             <div class="navbar-brand" class="text-center py-5">
+        </div>
+        <main class="text-center py-5">
+              <h1 id="Figure 1">Cannabis by State Chart</h2>
+                  <a href="legal.html"><img id="Figure 1" class="navbar-brand" 
+                  class="col-md-12" class="container"
+                  src="https://github.com/C-Miranda/ETL-Project/blob/master/Images/states_with_legal_cannabis.png?raw=true" 
+                  alt="Figure 1: Marijuana" width="400" height="300">
+                  </a>
+               </h1>
+      </div>
 
-      <p>This section will have a chart for legal MJ laws for each state</p> 
+    <div class="navbar-brand" class="text-center py-5"></div>
+    <main class="text-center py-5">
 
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                   <body>
+                     <p>In reference to the above table these observations can be made:</p> 
+                   </body>  
+                     <p>1. Legal Marijuana usage laws have shown a steady increase over the years</p>
+                     <p>2. There are 10 times more legal states in 2019 vs. 2012 </p>
+                     <p>3. After 2015 there is a drastic increase in additional states that become legal</p>
+                   
+               </div>
+          </div>
+      </div>
+    </main>
   </div>
 
   </nav>

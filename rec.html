@@ -1,85 +1,539 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="full-height">
 
 <head>
   <meta charset="UTF-8">
   <title>ETL Project</title>
+  
+  <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
 </head>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-  <a class="navbar-brand" class="row justify-content-end" 
-  <div class="col-md-2" 
-  <div class="col-md-3"
-  href="index.html"><strong>HOME PAGE</strong></a></div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-  </button>
-
-    <div class="collapse navbar-collapse" class="row justify-content-end" id="navbarSupportedContent">
-      <div class="col-md-9"></div>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
-          aria-haspopup="true" aria-expanded="false">DATA</a>
-
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="death.html">
-                Drug Related Death</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="rec.html">
-                Recreational Use by State</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="legal.html">
-                Cannabis Laws by State</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="collective.html">
-                Collective Table of Data</a>
-          </div>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
-            aria-haspopup="true" aria-expanded="false">CHARTS</a>
+<header>
   
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="charta.html">
-                  Drug Related Death</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="chartb.html">
-                  Recreational Use by State</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="chartc.html">
-                  Cannabis Laws by State</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="charts.html">
-                  Collective Data</a>
-            </div>
-        <li class="nav-item active">
-          <a class="nav-link" href="report.html">
-            Analysis Report <span class="sr-only">(current)</span></a>
-        </li>
-    </nav>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" class="row justify-content-end" 
+        <div class="col-md-2" 
+        <div class="col-md-3"
+        href="index.html"><strong>HOME PAGE</strong></a></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Recreational Drug Laws </h1>
-      <div class="dropdown-divider"></div>
-      <hr class="md-">
+        <div class="collapse navbar-collapse" class="row justify-content-end" id="navbarSupportedContent">
+          <div class="col-md-9"></div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+              aria-haspopup="true" aria-expanded="false">DATA</a>
+    
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="death.html">
+                    Drug Related Death</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="rec.html">
+                    Recreational Use by State</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="legal.html">
+                    Cannabis Laws by State</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="collective.html">
+                    Collective Table of Data</a>
+              </div>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+                aria-haspopup="true" aria-expanded="false">CHARTS</a>
+      
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="charta.html">
+                      Drug Related Death</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chartb.html">
+                      Recreational Use by State</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chartc.html">
+                      Cannabis Laws by State</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="charts.html">
+                      Collective Data</a>
+                </div>
+            <li class="nav-item active">
+              <a class="nav-link" href="report.html">
+                Analysis Report <span class="sr-only">(current)</span></a>
+            </li>
+        </nav>
+</header>
 
-      <section id="figure">
-        <h2 id="Figure 1">Ordered by State</h2>
-        <a href="chartb.html">
-        <img id="Figure 1" src="https://i1.wp.com/media.globalnews.ca/videostatic/45/603/gettyimages-874461140_848x480_1270290499612.jpg?w=1040&quality=70&strip=all" 
-        alt="Figure 1: Marijuana" width="600" height="500">
-        </a>
-      </section>
+  <div class="view intro-2" style="style2.css">
+       <div class="full-bg-img">
+            <div class="mask rgba-purple-light flex-center">
+                 <div class="container text-center white-text wow fadeInUp">
+                      <h2 class="display-11"> </h2>
+                          <div class="dropdown-divider navbar-brand"></div>
+                          <div class="dropdown-divider navbar-brand" class="text-center py-5"></div>
+                               <main class="text-center py-5">
+                      <h3 class="display-4">Recreational Use by State</h1>
+                          <hr class="md-">
 
-    <div class="dropdown-divider"></div>
+        <div id="figure" style="style.css">
+             <div class="dropdown-divider navbar-brand" class="text-center py-5">
+        </div>
+        <main class="text-center py-5">
+              <h1 id="Figure 1">Recreational Use by State Data</h2>
+      </div>
 
-      <p>Will have recreational drug law data table on this page</p> 
-
+    <div class="dropdown-divider navbar-brand" class="text-center py-5"></div>
+    <main class="text-center py-5">
+      <table border="1" class="dataframe" align="center">
+        <thead>
+          <tr style="text-align: center;">
+            <th></th>
+            <th>jurisdiction</th>
+            <th>date_begin</th>
+            <th>date_end</th>
+            <th>recreational_use_legalized</th>
+            <th>local_authority</th>
+            <th>citations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>Alaska</td>
+            <td>2/24/2015</td>
+            <td>5/4/2015</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2014 Alaska Ballot Measure No. 2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.020\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.040\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.050\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.070\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.090\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.210\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.220\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.900\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 43.61.010\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.200\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Alaska</td>
+            <td>5/5/2015</td>
+            <td>2/20/2016</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2015 Alaska Sess. Laws 4\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.200\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.020\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.040\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.050\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.070\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.090\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.210\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.220\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.900\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 43.61.010\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Alaska</td>
+            <td>2/21/2016</td>
+            <td>5/27/2016</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2015 Alaska Sess. Laws 4\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.020\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.040\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.050\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.070\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.190\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.200\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.210\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.220\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.900\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 28.35.030\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 43.61.010\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Alaska Admin. Code tit 3, § 306.305\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Alaska Admin. Code tit 3, § 306.310\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>Alaska</td>
+            <td>5/28/2016</td>
+            <td>12/31/2018</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2015 Alaska Sess. Laws 4\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.020\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.040\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.050\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.070\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.190\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.200\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.210\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.220\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.900\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 28.35.030\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 43.61.010\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Alaska Admin. Code tit 3, § 306.305\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Alaska Admin. Code tit 3, § 306.310\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Alaska Admin. Code tit 3, § 306.410\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>Alaska</td>
+            <td>1/1/2019</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2015 Alaska Sess. Laws 4\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.020\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.040\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.050\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.070\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.190\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.200\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.210\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.220\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 17.38.900\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 28.35.030\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Alaska Stat. § 43.61.010\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Alaska Admin. Code tit 3, § 306.305\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Alaska Admin. Code tit 3, § 306.310\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Alaska Admin. Code tit 3, § 306.410\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Alaska Admin. Code tit. 15, §61.100\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>California</td>
+            <td>1/1/2012</td>
+            <td>11/8/2016</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>California</td>
+            <td>11/9/2016</td>
+            <td>6/26/2017</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: Cal. Initiative Measure Prop. 64 (2016)\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2016 Cal. Legis. Serv. Ch. 827, §1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Const. Art. 13, § 35\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Const. Art. 13, § 36\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 19332\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26010\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26012\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26052\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26061\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26070\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26153\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26200\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11018.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11357\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11362.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11362.45\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34011\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34012\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051.15\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051.3\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34021\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 7203.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Veh. § 23152\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>California</td>
+            <td>6/27/2017</td>
+            <td>12/6/2017</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: Cal. Initiative Measure Prop. 64 (2016)\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Cal. Legis. Serv. Ch. 27, §49\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Const. Art. 13, § 35\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Const. Art. 13, § 36\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 19332\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26010\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26012\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26052\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26061\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26070\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26153\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26200\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11018.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11357\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11362.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11362.45\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34011\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34012\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051.15\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051.3\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34021\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 7203.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Veh. § 23152\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>California</td>
+            <td>12/7/2017</td>
+            <td>12/31/2017</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: Cal. Initiative Measure Prop. 64 (2016)\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Cal. Legis. Serv. Ch. 27, §49\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Const. Art. 13, § 35\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Const. Art. 13, § 36\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 19332\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26010\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26012\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26052\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26061\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26070\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26153\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26200\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11018.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11357\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11362.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11362.45\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34011\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34012\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051.15\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051.3\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34021\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 7203.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Veh. § 23152\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Cal. Code Regs. tit. 17, § 40100\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>California</td>
+            <td>1/1/2018</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: Cal. Initiative Measure Prop. 64 (2016)\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Cal. Legis. Serv. Ch. 27, §49\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Const. Art. 13, § 35\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Const. Art. 13, § 36\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 19332\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26010\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26012\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26052\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26061\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26070\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26153\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26200\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Bus. &amp;amp; Prof. Code § 26201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11018.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11357\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11362.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Health &amp;amp; Safety Code § 11362.45\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34011\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34012\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051.15\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 6051.3\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 34021\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Rev. &amp;amp; T. Code § 7203.1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Veh. § 23152\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Cal. Code Regs. tit. 17, § 40100\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Cal. Code Regs. tit. 18, § 3700\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td>Colorado</td>
+            <td>1/1/2012</td>
+            <td>12/9/2012</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td>Colorado</td>
+            <td>12/10/2012</td>
+            <td>5/27/2013</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2012 Colo. Legis. Serv. Init. Pet. 30\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Const. Art. 18 § 16\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 18-18-406\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 42-4-1301\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td>Colorado</td>
+            <td>5/28/2013</td>
+            <td>10/14/2013</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2013 Colo. Sess. Laws 329, §1\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2013 Colo. Sess. Laws 331, §1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Const. Art. 18 § 16\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.3-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-202\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 18-18-406\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 42-4-1301\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>Colorado</td>
+            <td>10/15/2013</td>
+            <td>9/29/2014</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2013 Colo. Sess. Laws 329, §1\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2013 Colo. Sess. Laws 331, §1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Const. Art. 18 § 16\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.3-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-202\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 18-18-406\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 42-4-1301\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.402\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td>Colorado</td>
+            <td>9/30/2014</td>
+            <td>11/29/2015</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2013 Colo. Sess. Laws 329, §§ 1, 5\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Const. Art. 18 § 16\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.3-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-104\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-202\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-301\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-901\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 18-13-122\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-26-106\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-28.8-202\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-28.8-302\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 42-4-1301\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.103\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.211\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.212\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.604\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>Colorado</td>
+            <td>11/30/2015</td>
+            <td>6/30/2017</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Codified Statute: Colo. Const. Art. 18 § 16\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.3-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-103\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-104\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-202\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-301\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-401\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-402\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-901\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 18-13-122\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 18-18-406\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-26-106\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-28.8-101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-28.8-202\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-28.8-302\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 42-4-1301\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.103\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.211\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.212\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.401 \n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.506\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.604\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>17</th>
+            <td>Colorado</td>
+            <td>7/1/2017</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2018 Colo. Sess. Laws 55, § 2\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Colo. Sess. Laws 267, §§28, 29\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Const. Art. 18 § 16\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.3-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-103\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-104\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-202\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-301\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-401\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-402\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 12-43.4-901\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 18-13-122\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 18-18-406\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-26-106\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-26-729\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-28.8-101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-28.8-202\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 39-28.8-302\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 42-4-1301\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 44-11-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 44-12-103\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 44-12-104\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 44-12-201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 44-12-202\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 44-12-301\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 44-12-401\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 44-12-402\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 44-12-403\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Colo. Rev. Stat. § 44-12-901\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.103\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.211\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.212\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.401\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.506\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: 1 Colo. Code Regs. § 212-2.604\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>18</th>
+            <td>District of Columbia</td>
+            <td>1/1/2012</td>
+            <td>2/25/2015</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>19</th>
+            <td>District of Columbia</td>
+            <td>2/26/2015</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>NaN</td>
+            <td>Enacted Bill: 2014 D.C. Stat 20-153, §2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: D.C. Code Ann. § 48-901.02\n&lt;br&gt;&lt;br&gt;\nCodified Statute: D.C. Code Ann. § 48-902.08\n&lt;br&gt;&lt;br&gt;\nCodified Statute: D.C. Code Ann. § 48-904.01\n&lt;br&gt;&lt;br&gt;\nCodified Statute: D.C. Code Ann. § 48-904.06\n&lt;br&gt;&lt;br&gt;\nCodified Statute: D.C. Code Ann. § 48-1201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: D.C. Code Ann. § 48-1203\n&lt;br&gt;&lt;br&gt;\nCodified Statute: D.C. Code Ann. § 50-2206.01\n&lt;br&gt;&lt;br&gt;\nCodified Statute: D.C. Code Ann. § 50-2206.11\n&lt;br&gt;&lt;br&gt;\nCodified Statute: D.C. Code Ann. § 50-2206.14\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>20</th>
+            <td>Maine</td>
+            <td>1/1/2012</td>
+            <td>1/29/2017</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>21</th>
+            <td>Maine</td>
+            <td>1/30/2017</td>
+            <td>6/28/2017</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2016 Me. Legis. Serv. 5\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Me. Legis. Serv. 1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2442\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2444\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2447\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2448\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2449\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2452\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 22, § 2383\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 17-A, § 1101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 17-A, § 1102\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 29-A, § 2401\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. Tit. 29-A, § 2411\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 36, § 1817\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>22</th>
+            <td>Maine</td>
+            <td>6/29/2017</td>
+            <td>8/1/2017</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2016 Me. Legis. Serv. 5\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Me. Legis. Serv. 1\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Me. Legis. Serv. 1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 1-C\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2442\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2444\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2447\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2448\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2449\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2452\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 22, § 2383\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 17-A, § 1101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 17-A, § 1102\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 29-A, § 2401\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. Tit. 29-A, § 2411\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 36, § 1817\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>23</th>
+            <td>Maine</td>
+            <td>8/2/2017</td>
+            <td>1/31/2018</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2016 Me. Legis. Serv. 5\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Me. Legis. Serv. 1\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Me. Legis. Serv. 1\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 1-C\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2442\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2444\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2447\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2448\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2449\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2452\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 22, § 2383\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 17-A, § 1101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 17-A, § 1102\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 29-A, § 2401\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. Tit. 29-A, § 2411\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 36, § 1817\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>24</th>
+            <td>Maine</td>
+            <td>2/1/2018</td>
+            <td>5/1/2018</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2016 Me. Legis. Serv. 5\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Me. Legis. Serv. 1\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2017 Me. Legis. Serv. 278\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 1-C\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2442\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2444\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2447\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2448\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2449\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2452\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 22, § 2383\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 17-A, § 1101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 17-A, § 1102\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 29-A, § 2401\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. Tit. 29-A, § 2411\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 36, § 1817\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>25</th>
+            <td>Maine</td>
+            <td>5/2/2018</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2018 Me. Legis. Serv. 409\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 1-C\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2442\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2444\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2447\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2448\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2449\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 7, § 2452\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 22, § 2383\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 17-A, § 1101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 17-A, § 1102\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 29-A, § 2401\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. Tit. 29-A, § 2411\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 36, § 1817\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 102\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 104\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 201\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 301\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 304\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 401\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 402\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 501\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 502\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 504\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 508\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 1001\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 28-B, § 1501\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 29-A, § 2401\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 29-A, § 2411\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Me. Rev. Stat. Ann. tit. 36, § 1811\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>26</th>
+            <td>Massachusetts</td>
+            <td>1/1/2012</td>
+            <td>12/14/2016</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>27</th>
+            <td>Massachusetts</td>
+            <td>12/15/2016</td>
+            <td>7/27/2017</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2016 Mass. Legis. Serv. Ch. 334\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 90, § 24\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 90, § 24\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 64H, § 2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 64N, § 2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94G, § 3\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94G, § 7\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94G, § 13\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94C, § 32L\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>28</th>
+            <td>Massachusetts</td>
+            <td>7/28/2017</td>
+            <td>3/22/2018</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2016 Mass. Legis. Serv. Ch. 334\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 64H, § 2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 64N, § 2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 90, § 24\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 90, § 24\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94G, § 3\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94G, § 7\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94G, § 13\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94C, § 32L\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>29</th>
+            <td>Massachusetts</td>
+            <td>3/23/2018</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2016 Mass. Legis. Serv. Ch. 334\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 64H, § 2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 64N, § 2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 90, § 4\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 90, § 24\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94G, § 3\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94G, § 7\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94G, § 13\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mass. Gen. Laws ch. 94C, § 32L\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Mass. Regs. Code tit. 830, § 64N.1.1\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Mass. Regs. Code tit. 935, § 500.002\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Mass. Regs. Code tit. 935, § 500.050\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>30</th>
+            <td>Michigan</td>
+            <td>1/1/2012</td>
+            <td>12/5/2018</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>31</th>
+            <td>Michigan</td>
+            <td>12/6/2018</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2018 Mich. Legis. Serv. Ref. Meas. 18-1 (Proposal 18-1)\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 205.52\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 205.625\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 257.8b\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.7104\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.7212\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.27953\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.27954\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.27955\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.27956\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.27957\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.27958\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.27959\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.27961\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Mich. Stat. Ann. § 333.27963\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>32</th>
+            <td>Nevada</td>
+            <td>1/1/2012</td>
+            <td>12/31/2016</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>33</th>
+            <td>Nevada</td>
+            <td>1/1/2017</td>
+            <td>6/30/2017</td>
+            <td>Yes</td>
+            <td>Local Control</td>
+            <td>Enacted Bill: 2016 Nevada Laws I.P. 2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.020\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.030\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.100\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.110\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.120\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.200\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.220\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.300\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.400\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.500\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 484C.110\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>34</th>
+            <td>Nevada</td>
+            <td>7/1/2017</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>Local Control</td>
+            <td>Enacted Bill: 2017 Nevada Laws Ch. 76, § 9\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 372A.210\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 372A.220\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 372A.290\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453A.056\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.020\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.030\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.100\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.110\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.120\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.200\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.220\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.300\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.400\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 453D.500\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Nev. Rev. Stat. § 484C.110\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>35</th>
+            <td>Oregon</td>
+            <td>1/1/2012</td>
+            <td>6/30/2015</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>36</th>
+            <td>Oregon</td>
+            <td>7/1/2015</td>
+            <td>10/4/2015</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: 2015 Oregon Laws Ch. 1 (B.M. 91)\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2015 Oregon Laws Ch. 614 (H.B. 3400)\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.015\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.025 \n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.110\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.165\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.260\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.340\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.478\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.525\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.700 \n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.800\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>37</th>
+            <td>Oregon</td>
+            <td>10/5/2015</td>
+            <td>12/31/2015</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: Laws 2015, c. 699, § 2 \n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.015\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.025\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.110\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.165\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.260\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.340\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.478\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.525\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.700 \n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.705\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>38</th>
+            <td>Oregon</td>
+            <td>1/1/2016</td>
+            <td>6/27/2016</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: Laws 2015, c. 614, § 13\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: Laws 2015, c. 699, § 2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.015\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.025\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.075\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.110\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.165\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.260\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.340\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.478\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.525\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.700\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.705\n&lt;br&gt;&lt;br&gt;\nCodified Statute: O.R.S. § 475B.800\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: OAR 845-025-1015\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: OAR 845-025-1230\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: OAR 845-025-2040\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: OAR 845-025-2820\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: OAR 845-025-2890\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: OAR 845-025-8520\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>39</th>
+            <td>Oregon</td>
+            <td>6/28/2016</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>Both</td>
+            <td>Enacted Bill: Laws 2015, c. 614, § 13\n&lt;br&gt;&lt;br&gt;\nEnacted Bill: Laws 2015, c. 699, § 2\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.015\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.025\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.075\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.085\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.105\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.110\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.165\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.211\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.260 \n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.316\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.340\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.478\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.486\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.525 \n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.600\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.700\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.705\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.800\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.910\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.949\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Or. Rev. Stat. § 475B.968\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Or. Admin. R. 845-025-1015\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Or. Admin. R. 845-025-1230\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Or. Admin. R. 845-025-2040\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Or. Admin. R. 845-025-2800\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Or. Admin. R. 845-025-2820\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Or. Admin. R. 845-025-2890\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Or. Admin. R. 845-025-8520\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>40</th>
+            <td>Vermont</td>
+            <td>1/1/2012</td>
+            <td>6/30/2018</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>41</th>
+            <td>Vermont</td>
+            <td>7/1/2018</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>Local Control</td>
+            <td>Enacted Bill: 2018 Vt. Acts &amp;amp; Resolves 86 \n&lt;br&gt;&lt;br&gt;\nCodified Statute: Vt. Stat. Ann. tit. 18, § 4230\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Vt. Stat. Ann. tit. 18, § 4230a\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Vt. Stat. Ann. tit. 18, § 4230b\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Vt. Stat. Ann. tit. 18, § 4230f\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Vt. Stat. Ann. tit. 18, § 4230g\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>42</th>
+            <td>Washington</td>
+            <td>1/1/2012</td>
+            <td>12/5/2012</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>43</th>
+            <td>Washington</td>
+            <td>12/6/2012</td>
+            <td>11/20/2013</td>
+            <td>Yes</td>
+            <td>NaN</td>
+            <td>Enacted Bill: Wash. Initiative Measure No. 502 (2012)\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.502\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.503\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.506\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.345\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.354\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.357\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.360\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.465\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.535\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.4013\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 82.08.020\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-079\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-081\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>44</th>
+            <td>Washington</td>
+            <td>11/21/2013</td>
+            <td>6/11/2014</td>
+            <td>Yes</td>
+            <td>NaN</td>
+            <td>Enacted Bill: Wash. Initiative Measure No. 502 (2012)\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.502\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.503\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.506\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.345\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.354\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.357\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.360\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.465\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.535\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.4013\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 82.08.020\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-075\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-079\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-081\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>45</th>
+            <td>Washington</td>
+            <td>6/12/2014</td>
+            <td>4/23/2015</td>
+            <td>Yes</td>
+            <td>NaN</td>
+            <td>Enacted Bill: 2013 Wash. Laws 3 \n&lt;br&gt;&lt;br&gt;\nEnacted Bill: 2014 Wash. Laws 192\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.502\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.503\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.506\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.345\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.354\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.357\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.360\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.465\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.535\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.4013\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 82.08.020\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-075\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-079\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-081\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>46</th>
+            <td>Washington</td>
+            <td>4/24/2015</td>
+            <td>6/30/2015</td>
+            <td>Yes</td>
+            <td>NaN</td>
+            <td>Enacted Bill: 2015 Wash. Laws 70\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.502\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.503\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.506\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.345\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.354\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.357\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.360\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.465\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.535\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.4013\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 82.08.020\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-075\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-079\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-081\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>47</th>
+            <td>Washington</td>
+            <td>7/1/2015</td>
+            <td>7/23/2015</td>
+            <td>Yes</td>
+            <td>NaN</td>
+            <td>Enacted Bill: 2015 Wash. Laws 2nd Sp. Sess. Ch. 4\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.502\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.503\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.506\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.345\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.354\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.357\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.360\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.465\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.535\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.4013\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 82.08.020\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-079\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-081\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-075\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+          <tr>
+            <th>48</th>
+            <td>Washington</td>
+            <td>7/24/2015</td>
+            <td>1/1/2019</td>
+            <td>Yes</td>
+            <td>NaN</td>
+            <td>Enacted Bill: 2015 Wash. Laws 70\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.502\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.503\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 46.61.506\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.101\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.345\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.354\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.360\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.465\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.535\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.357\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.560\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 69.50.4013\n&lt;br&gt;&lt;br&gt;\nCodified Statute: Wash. Rev. Code § 82.08.020\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-079\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-075\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-081\n&lt;br&gt;&lt;br&gt;\nCodified Regulation: Wash. Admin. Code § 314-55-096\n&lt;br&gt;&lt;br&gt;\n</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
   </div>
 
   </nav>
